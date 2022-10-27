@@ -10,6 +10,8 @@ namespace Mwo3cw3
         {
             string value;
 
+            Console.WriteLine("Program przeprowadzający zaawansowane operacje matematyczne. \n");
+
             do
             {
                 int res;
@@ -38,7 +40,8 @@ namespace Mwo3cw3
                         break;
                     case "/":
                         if (num2 == 0) {
-                            Console.WriteLine("Error!!!");
+                            Console.WriteLine("Error");
+                            Console.WriteLine("!Nie dzielimy przez 0!");
                         }
                         else {
                             res = num1 / num2;
