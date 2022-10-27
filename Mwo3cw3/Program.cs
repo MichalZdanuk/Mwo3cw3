@@ -10,6 +10,8 @@ namespace Mwo3cw3
         {
             string value;
 
+            Console.WriteLine("Program przeprowadzający zaawansowane operacje matematyczne. \n");
+
             do
             {
                 int res;
