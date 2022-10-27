@@ -39,8 +39,13 @@ namespace Mwo3cw3
                         Console.WriteLine("Mnożenie:" + res);
                         break;
                     case "/":
-                        res = num1 / num2;
-                        Console.WriteLine("Dzielenie:" + res);
+                        if (num2 == 0) {
+                            Console.WriteLine("Error");
+                        }
+                        else {
+                            res = num1 / num2;
+                            Console.WriteLine("Dzielenie:" + res);
+                        }
                         break;
                     default:
                         Console.WriteLine("Niepoprawne dane");
