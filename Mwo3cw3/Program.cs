@@ -38,7 +38,7 @@ namespace Mwo3cw3
                         break;
                     case "/":
                         if (num2 == 0) {
-                            Console.WriteLine("Error");
+                            Console.WriteLine("Error!!!");
                         }
                         else {
                             res = num1 / num2;
