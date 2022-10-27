@@ -9,6 +9,7 @@ namespace Mwo3cw3
         static void Main(string[] args)
         {
             string value;
+
             do
             {
                 int res;
