@@ -13,26 +13,28 @@ namespace Mwo3cw3
             do
             {
                 int res;
-                Console.Write("Enter first number:");
+                Console.Write("Wprowadź pierwszą liczbę:");
                 int num1 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter second number:");
+                
+                Console.Write("Wprowadź drugą liczbę:");
                 int num2 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter symbol(/,+,-,*):");
+                
+                Console.Write("Wprowadź symbol(/,+,-,*):");
                 string symbol = Console.ReadLine();
 
                 switch (symbol)
                 {
                     case "+":
                         res = num1 + num2;
-                        Console.WriteLine("Addition:" + res);
+                        Console.WriteLine("Dodawanie:" + res);
                         break;
                     case "-":
                         res = num1 - num2;
-                        Console.WriteLine("Subtraction:" + res);
+                        Console.WriteLine("Odejmowanie:" + res);
                         break;
                     case "*":
                         res = num1 * num2;
-                        Console.WriteLine("Multiplication:" + res);
+                        Console.WriteLine("Mnożenie:" + res);
                         break;
                     case "/":
                         if (num2 == 0) {
@@ -40,15 +42,15 @@ namespace Mwo3cw3
                         }
                         else {
                             res = num1 / num2;
-                            Console.WriteLine("Division:" + res);
+                            Console.WriteLine("Dzielenie:" + res);
                         }
-                            break;
+                        break;
                     default:
-                        Console.WriteLine("Wrong input");
+                        Console.WriteLine("Niepoprawne dane");
                         break;
                 }
                 Console.ReadLine();
-                Console.Write("Do you want to continue(y/n):");
+                Console.Write("Czy chcesz kontynuować(y/n):");
                 value = Console.ReadLine();
             }
             while (value == "y" || value == "Y");
