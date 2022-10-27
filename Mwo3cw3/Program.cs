@@ -41,6 +41,7 @@ namespace Mwo3cw3
                     case "/":
                         if (num2 == 0) {
                             Console.WriteLine("Error");
+                            Console.WriteLine("!Nie dzielimy przez 0!");
                         }
                         else {
                             res = num1 / num2;
